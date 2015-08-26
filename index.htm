@@ -1,0 +1,227 @@
+<!doctype html>
+<!-- 
+	TODO: no margins, bg island + dot org, javascript pages/templates/hovers, heroku
+-->
+<html>
+	<head>
+		<title>Color of Jeju</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="jquery-ui-1.11.4.custom/jquery-ui.css" />
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body>
+		<div class="row" id="content">
+			<!-- topcol1 -->
+		  <div class="col-xs-1 topcol">
+				<!--
+				<div class="row cell cell-90"></div>
+				<div class="row cell cell-10" id="corner-left"></div>
+				-->
+			</div>
+			<!-- topcol2 -->
+		  <div class="col-xs-1 topcol">
+				<div class="row cell cell-10"></div>
+				<div class="row cell center-block" id="menu">
+					<a href="#" class="menuitem" id="menu-mountain"></a>
+					<a href="#" class="menuitem" id="menu-island"></a>
+					<a href="#" class="menuitem" id="menu-water"></a>
+					<a href="#" class="menuitem" id="menu-place"></a>
+				</div>
+				<div class="row cell cell-10" id="wave1">
+					<div class="wave-blue-small"></div>
+				</div>
+				<div class="row cell cell-20"></div>
+				<div class="row cell cell-5"></div>
+				<div class="row cell cell-5">
+					<div class="corner-left"></div>
+				</div>
+			</div>
+			<!-- topcol3 -->
+		  <div class="col-xs-1 topcol">
+				<div class="row cell cell-20"></div>
+				<div class="row cell cell-20"></div>
+				<div class="row cell cell-20"></div>
+				<div class="row cell cell-10"></div>
+				<div class="row cell cell-10" id="wave2">
+					<div class="wave-blue-large"></div>
+				</div>
+				<div class="row cell cell-10"></div>
+				<div class="row cell cell-10">
+					<div class="col-md-8"></div>
+					<div class="col-md-4">
+						<div class="thing-blue-dotted"></div>
+					</div>
+				</div>
+			</div>
+			<!-- topcol4 -->
+		  <div class="col-xs-1 topcol">
+				<div class="row cell cell-20"></div>
+				<div class="row cell cell-20" id="wave3">
+					<div class="wave-green-large"></div>
+				</div>
+				<div class="row cell cell-20 center-block">
+					<a id="dot-a" data-menu="water" title="." class="dot dot-blue" href="#"></a>
+					<a id="dot-b" data-menu="island" title="." class="dot dot-green" href="#"></a>
+					<a id="dot-c" title="." class="dot dot-blueish" href="#"></a>
+					<a id="dot-d" title="." class="dot dot-red" href="#"></a>
+				</div>
+				<div class="row cell cell-20"></div>
+				<div class="row cell cell-10 center-block">
+					<a id="dot-e" data-menu="island" title="." class="dot dot-beige" href="#"></a>
+					<a id="dot-f" data-menu="island" title="." class="dot dot-brown" href="#"></a>
+				</div>
+				<div class="row cell cell-10"></div>
+			</div>
+			<!-- topcol5 -->
+		  <div class="col-xs-1 topcol">
+				<div class="row cell cell-20"></div>
+				<div class="row cell cell-20"></div>
+				<div class="row cell cell-20"></div>
+				<div class="row cell cell-10 center-block">
+					<a id="dot-g" title="." class="dot dot-darkgreen" href="#"></a>
+				</div>
+				<div class="row cell cell-10 center-block">
+					<a id="dot-h" data-menu="mountain" title="." class="dot dot-yellow" href="#"></a>
+					<a id="dot-i" data-menu="mountain" title="." class="dot dot-lightgreen" href="#"></a>
+				</div>
+				<div class="row cell cell-20"></div>
+				
+			</div>
+			<!-- topcol6 -->
+		  <div class="col-xs-1 topcol">
+				<div class="row cell cell-5"></div>
+				<div class="row cell cell-10 center-block">
+						<div class="thing-green-mixed"></div>
+				</div>
+				<div class="row cell cell-10"></div>
+				<div class="row cell cell-10 center-block">
+					<a id="dot-j" data-menu="water" title="." class="dot dot-darkred" href="#"></a>
+				</div>
+				<div class="row cell cell-10"></div>
+				<div class="row cell cell-5"></div>
+				<div class="row cell cell-20"></div>
+				<div class="row cell cell-10"></div>
+				<div class="row cell cell-10">
+						<div class="wave-green-large"></div>
+				</div>
+			</div>
+			<!-- topcol7 -->
+		  <div class="col-xs-1 topcol">
+				<div class="row cell cell-10"></div>
+				<div class="row cell cell-10 center-block">
+						<div class="wave-blue-large"></div>
+				</div>
+				<div class="row cell cell-20"></div>
+				<div class="row cell cell-20"></div>
+				<div class="row cell cell-10 center-block">
+					<a id="dot-k" title="." class="dot dot-gray" href="#"></a>
+					<a id="dot-l" title="." class="dot dot-black" href="#"></a>
+				</div>
+				<div class="row cell cell-10"></div>
+				<div class="row cell cell-20"></div>
+			</div>
+			<!-- topcol8 -->
+		  <div class="col-xs-1 topcol">
+				<div class="row cell cell-20"></div>
+				<div class="row cell cell-20"></div>
+				<div class="row cell cell-20">
+					<a id="dot-m" data-menu="mountain" title="." class="dot dot-purple" href="#"></a>
+				</div>
+				<div class="row cell cell-10 center-block">
+					<a id="dot-n" title="." class="dot dot-orange" href="#"></a>
+					<a id="dot-o" title="." class="dot dot-lightblue" href="#"></a>
+				</div>
+				<div class="row cell cell-10">
+						<div class="thing-blue-solid center-block"></div>
+				</div>
+				<div class="row cell cell-10 center-block">
+						<div class="wave-blue-small"></div>
+				</div>
+				<div class="row cell cell-10"></div>
+			</div>
+			<!-- topcol9 -->
+		  <div class="col-xs-1 topcol">
+				<div class="row cell cell-5"></div>
+				<div class="row cell cell-5">
+						<div class="thing-blue-solid"></div>
+				</div>
+				<div class="row cell cell-10"></div>
+				<div class="row cell cell-10 center-block">
+					<a id="dot-p" data-menu="water" title="." class="dot dot-darkgray" href="#"></a>
+				</div>
+				<div class="row cell cell-20"></div>
+				<div class="row cell cell-20"></div>
+				<div class="row cell cell-20"></div>
+				<div class="row cell cell-10"></div>
+			</div>
+			<!-- topcol10 -->
+		  <div class="col-xs-1 topcol">
+				<div class="row cell cell-5"></div>
+				<div class="row cell cell-10">
+					<div class="wave-green-small"></div>
+				</div>
+				<div class="row cell cell-5"></div>
+				<div class="row cell cell-10">
+					<a id="dot-q" data-menu="water" title="." class="dot dot-darkblue" href="#"></a>
+					<a id="dot-r" title="." class="dot dot-darkgray2" href="#"></a>
+				</div>
+				<div class="row cell cell-20">
+					<a id="dot-s" title="." class="dot dot-lightgreen2" href="#"></a>
+				</div>
+				<div class="row cell cell-20">
+					<a id="dot-t" title="." class="dot dot-weirdorange" href="#"></a>
+				</div>
+				<div class="row cell cell-10">
+					<div class="wave-blue-small"></div>
+				</div>
+				<div class="row cell cell-20"></div>
+			</div>
+			<!-- topcol11 -->
+		  <div class="col-xs-1 topcol">
+				<div class="row cell cell-10"></div>
+				<div class="row cell cell-20">
+					<div class="wave-blue-small"></div>
+				</div>
+				<div class="row cell cell-20">
+					<a id="dot-u" data-menu="water" title="." class="dot dot-lightblue2" href="#"></a>
+					<a id="dot-v" data-menu="island" title="." class="dot dot-darkgreen2" href="#"></a>
+					<a id="dot-w" data-menu="mountain" title="." class="dot dot-lightbrown" href="#"></a>
+				</div>
+				<div class="row cell cell-10"></div>
+				<div class="row cell cell-20">
+					<div class="wave-green-large"></div>
+				</div>
+				<div class="row cell cell-20"></div>
+			</div>
+			<!-- topcol12 -->
+		  <div class="col-xs-1 topcol">
+				<div class="row cell cell-20">
+					<div class="corner-right"></div>
+				</div>
+				<div class="row cell cell-20"></div>
+				<div class="row cell cell-20">
+					<div class="wave-green-small"></div>
+				</div>
+				<div class="row cell cell-20">
+					<div class="thing-blue-mixed"></div>
+				</div>
+				<div class="row cell cell-10">
+					<div class="wave-green-small"></div>
+				</div>
+				<div class="row cell cell-5"></div>
+				<div class="row cell cell-5">
+					<div class="jeju-logo"></div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+		<script type="text/javascript" src="bootstrap-3.3.5-dist/js/bootstrap.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+  		  $(".dot").tooltip();
+  		});	
+		</script>
+	</body>
+</html>
