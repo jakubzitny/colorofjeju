@@ -9,6 +9,12 @@ var data = require('./../data');
 var Canvas = React.createClass({
 
 	getInitialState: function () {
+		var page = "page"; // page: "content" or "page"
+		var dot = window.location.hash.substr(1); //selected dot
+		if (/^([a-z])$/.test(dot) === false) {
+			page = "content";
+			dot = null;
+		};
 		return {
 			selectedMenuItems: {
 				"water": true,
@@ -16,8 +22,8 @@ var Canvas = React.createClass({
 				"place": true,
 				"mountain": true,
 			},
-			page: "content",
-			dot: null
+			page: page,
+			dot: dot
 		};
 	},	
 
@@ -51,7 +57,7 @@ var Canvas = React.createClass({
 	},
 
 	_onDotClick: function (dotLabel) {
-		console.log(dotLabel);
+		//console.log(dotLabel);
 		this.setState({
 			page: "page",
 			dot: dotLabel

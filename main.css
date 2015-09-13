@@ -264,6 +264,10 @@ body {
 	margin-bottom: 5px;
 }
 
+.dot-hidden {
+	background-color: white
+},
+
 .bubble {
 	display: block;
 	border-radius: 50%;
@@ -407,7 +411,7 @@ body {
 }
 
 #title {
-	margin-top: 150px;
+	margin-top: 50px;
 }
 
 #article .featured-img {
@@ -421,9 +425,9 @@ body {
 
 #title h1 {
 	display: inline-block;
-	font-size: 20px;
-	border-bottom: 2px solid #A0794B;
-	margin-left: -12px;
+	font-size: 17px;
+	font-weight: bold;
+	margin-left: -10px;
 }
 
 #title img {
@@ -440,4 +444,9 @@ body {
 }
 
 .featured-img {
+	max-height: 160px
+}
+
+.featured-img img {
+	max-height: 160px
 }

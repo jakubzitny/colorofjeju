@@ -16,9 +16,10 @@ var MenuButton = React.createClass({
 
 	render: function () {
 		var id = "menu-" + this.props.label;
+		var anchor = "#"; // + ((this.props.selected) ? this.props.label : "");
 		var classes = "menuitem" + ((this.props.selected) ? " selected" : "");
 		return (
-			<a href="#" className={classes} id={id} onClick={this._onClick}></a>
+			<a href={anchor} className={classes} id={id} onClick={this._onClick}></a>
 		);
 	}
 

@@ -2,19 +2,24 @@
 
 var React = require('react');
 
-var Menu = require('./Menu');
+var MenuButton = require('./MenuButton');
 var Dot = require('./Dot');
 
 var Page = React.createClass({
 	render: function () {
+		var h1Style = {
+			borderBottom: "2px solid " + this.props.data.color
+		};
 		var assetPath = "assets/pages/" + this.props.data.label;
 		return (
 			<div className="row" id="page">
 				<div className="col-xs-1"></div>
 				<div id="menu" className="col-xs-1 topcol">
 					<div className="row cell cell-10"></div>
-					<a href="#" onClick={this.props.onBackClick}>back</a>
-					{/*<Menu onClick={this.props.onMenuClick} />*/}
+					<div className="row cell center-block" id="menu">
+						<MenuButton label={this.props.data.group} selected={true} />
+						<a href="#" onClick={this.props.onBackClick}>back</a>
+					</div>
 					<div className="row cell cell-10"></div>
 					<div className="row cell cell-20"></div>
 					<div className="row cell cell-5"></div>
@@ -27,7 +32,7 @@ var Page = React.createClass({
 					<div className="row" id="title">
 						<div className="col-md-12">
 							<img src={assetPath + "/title-corner.png"} />
-							<h1>{this.props.data.title}</h1>
+							<h1 style={h1Style}>{this.props.data.title}</h1>
 						</div>
 					</div>
 					<div className="row" id="article">

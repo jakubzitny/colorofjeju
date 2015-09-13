@@ -63,9 +63,8 @@ var Dot = React.createClass({
 	},
 
 	render: function () {
-		if (this._isHidden()) return false;
 		var dotId = "dot-" + this.props.label;
-		var classes = "dot" + " dot-" + this.props.color;
+		var classes = "dot" + (this._isHidden() ? " dot-hidden" : " dot-" + this.props.color);
 		var dotStyle = {
 			marginTop: this.props.marginTop,
 			marginLeft: this.props.marginLeft
@@ -76,9 +75,9 @@ var Dot = React.createClass({
 				<div className="bubble"></div>
 			);
 		}
-
+		var anchor = "#" + this.props.label;
 		return (
-			<a id={dotId} data-menu={this.props.dataMenu} ref="dot" title="." className={classes} href="#" style={dotStyle} onClick={this.props.onClick.bind(null, this.props.label)}></a>
+			<a id={dotId} data-menu={this.props.dataMenu} ref="dot" title="." className={classes} href={anchor} style={dotStyle} onClick={this.props.onClick.bind(null, this.props.label)}></a>
 		);
 	}
 
