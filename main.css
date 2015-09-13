@@ -1,11 +1,10 @@
 body {
+}
+
+#mount-point {
 	background-color: #fff;
-	background-repeat: no-repeat;
-	/*background-image: url('bg.png');
-	background-size: 800px 600px;
-	background-position: 100px 20px;
-	background-repeat: no-repeat; */
-	
+	font-family: "AppleSDGothicNeo";
+	color: #777;
 	position: absolute;
 	bottom: 20px;
 	top: 20px;
@@ -14,12 +13,11 @@ body {
 	min-height: 600px;
 }
 
-
 #content {
 	background-color: #fff;
 	background-repeat: no-repeat;
 	/*background-image: url('back_guides.png');*/
-	background-image: url('back.png');
+	background-image: url('assets/back.png');
 	/*background-size: 900px 498px;*/
 	background-size: 75% 70%;
 	background-position: center;
@@ -36,10 +34,23 @@ body {
 	overflow: visible;
 }
 
+#page {
+	background-color: #fff;
+	min-height: 100%;
+	height: 100%;
+}
+
+#page .topcol {
+	min-height: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+
 .corner-left {
 	width: 18px;
 	height: 18px;
-	background-image: url('webbb/01pg_png/lineee1.png');
+	background-image: url('assets/line1.png');
 	background-repeat: no-repeat;
 	background-size: 18px 18px;
 	float: left;
@@ -48,7 +59,7 @@ body {
 .corner-right {
 	width: 18px;
 	height: 18px;
-	background-image: url('webbb/01pg_png/lineeee2.png');
+	background-image: url('assets/line2.png');
 	background-repeat: no-repeat;
 	background-size: 18px 18px;
 	float: right;
@@ -57,7 +68,7 @@ body {
 .jeju-logo {
 	width: 70px;
 	height: 40px;
-	background-image: url('webbb/01pg_png/jeju logo.png');
+	background-image: url('assets/logo.png');
 	background-repeat: no-repeat;
 	background-size: 70px 40px;
 	float: right;
@@ -115,70 +126,78 @@ body {
 }
 
 #menu #menu-mountain {
-	background-image: url('webbb/01pg_png/mountain logo left side.png');
+	background-image: url('assets/mountain.png');
 }
 
-#menu #menu-mountain:hover {
-	background-image: url('webbb/02pg/green left side.png');
+#menu #menu-mountain:hover,
+#menu #menu-mountain.selected {
+	background-image: url('assets/mountain_hover.png');
 }
 
 #menu #menu-island {
-	background-image: url('webbb/01pg_png/island left side logo.png');
+	background-image: url('assets/island.png');
 }
 
-#menu #menu-island:hover {
-	background-image: url('webbb/14/islanddd.png');
+#menu #menu-island:hover,
+#menu #menu-island.selected {
+	background-image: url('assets/island_hover.png');
 }
 
 #menu #menu-water {
-	background-image: url('webbb/01pg_png/water left logo.png');
+	background-image: url('assets/water.png');
 }
 
-#menu #menu-water:hover {
-	background-image: url('webbb/21/water green.png');
+#menu #menu-water:hover,
+#menu #menu-water.selected {
+	background-image: url('assets/water_hover.png');
 }
 
 #menu #menu-place {
-	background-image: url('webbb/01pg_png/palce left side logo.png');
+	background-image: url('assets/place_hover.png');
 }
 
-#menu #menu-place:hover {
-	background-image: url('webbb/34/place green.png');
+#menu #menu-place:hover,
+#menu #menu-place.selected {
+	background-image: url('assets/place_hover.png');
 }
 
 /**
  * waves
  */
 
+/* 68px 49px */
 .wave-blue-small {
 	width: 45px;
 	height: 32px;
-	background-image: url('webbb/01pg_png/BG water.png');
-	background-size: 45px 32px; /* 68px 49px */;
+	background-image: url('assets/wave_blue_small.png');
+	background-size: 45px 32px;
 	background-repeat: no-repeat;
 }
 
+/* 103px 74px */
 .wave-blue-large {
 	width: 70px;
 	height: 50px;
-	background-image: url('webbb/01pg_png/BG water 2.png');
-	background-size: 70px 50px; /* 103px 74px */;
+	background-image: url('assets/wave_blue_large.png');
+	background-size: 70px 50px;
 	background-repeat: no-repeat;
 }
 
+/* 95px 68px */
 .wave-green-small {
 	width: 66px;
 	height: 47px;
-	background-image: url('webbb/01pg_png/bg small.png');
-	background-size: 66px 47px; /* 95px 68px */;
+	background-image: url('assets/wave_green_small.png');
+	background-size: 66px 47px;
 	background-repeat: no-repeat;
 }
 
+/* 174px 125px */
 .wave-green-large {
 	width: 85px;
 	height: 61px;
-	background-image: url('webbb/01pg_png/BG water3.png');
-	background-size: 85px 61px; /* 174px 125px */;
+	background-image: url('assets/wave_green_large.png');
+	background-size: 85px 61px;
 	background-repeat: no-repeat;
 }
 
@@ -197,35 +216,39 @@ body {
  * weird rounded things
  */
 
+/* 50px 50px */
 .thing-blue-dotted {
 	width: 25px;
 	height: 25px;
-	background-image: url('webbb/01pg_png/BG6.png');
-	background-size: 25px 25px; /* 50px 50px */;
+	background-image: url('assets/thing_blue_dotted.png');
+	background-size: 25px 25px;
 	background-repeat: no-repeat;
 }
 
+/* 50px 50px */
 .thing-blue-solid {
 	width: 25px;
 	height: 25px;
-	background-image: url('webbb/01pg_png/BG5.png');
-	background-size: 25px 25px; /* 50px 50px */;
+	background-image: url('assets/thing_blue_solid.png');
+	background-size: 25px 25px;
 	background-repeat: no-repeat;
 }
 
+/* 64px 46px */
 .thing-green-mixed {
 	width: 35px;
 	height: 25px;
-	background-image: url('webbb/01pg_png/BG1.png');
-	background-size: 35px 25px; /* 64px 46px */;
+	background-image: url('assets/thing_green_mixed.png');
+	background-size: 35px 25px;
 	background-repeat: no-repeat;
 }
 
+/* 64px 46px */
 .thing-blue-mixed {
 	width: 35px;
 	height: 25px;
-	background-image: url('webbb/01pg_png/BG03.png');
-	background-size: 35px 25px; /* 64px 46px */;
+	background-image: url('assets/thing_blue_mixed.png');
+	background-size: 35px 25px;
 	background-repeat: no-repeat;
 }
 
@@ -354,7 +377,7 @@ body {
 	color: rgb(153, 102, 51);
 	width: 150px;
 	height: 150px;
-	background-image: url('webbb/04/2.png');
+	background-image: url('assets/tooltip.png');
 	background-repeat: no-repeat;
 	background-size: 150px 150px;
   background-color: transparent;
@@ -364,7 +387,57 @@ body {
 	border-top-color: rgb(153, 102, 51);
 }
 
+.bubble {
+	margin-top: -150px;
+	margin-left: -30px;
+	position: absolute;
+	opacity: 0.8;
+	z-index: 1000;
+	width: 150px;
+	height: 150px;
+	background-image: url('assets/tooltip.png');
+	background-repeat: no-repeat;
+	background-size: 150px 150px;
+  background-color: transparent;
+}
+
 #bubbles {
 	margin-top: 20px;
 	text-align: center;
+}
+
+#title {
+	margin-top: 150px;
+}
+
+#article .featured-img {
+	width: 100px;
+}
+
+#article p { 
+	text-align: left;
+	font-size: 12px;
+}
+
+#title h1 {
+	display: inline-block;
+	font-size: 20px;
+	border-bottom: 2px solid #A0794B;
+	margin-left: -12px;
+}
+
+#title img {
+	width: 20px;
+	height: 20px;
+	margin-left: -10px;
+	margin-top: -30px;
+}
+
+#page #bubbles img {
+	margin: 20px;
+	width: 150px;
+	height: 150px;
+}
+
+.featured-img {
 }
