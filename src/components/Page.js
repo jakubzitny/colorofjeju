@@ -26,7 +26,7 @@ var Page = React.createClass({
 				<div className="col-xs-8 topcol">
 					<div className="row" id="title">
 						<div className="col-md-12">
-							<img src="webbb/04/line.png" />
+							<img src={assetPath + "/title-corner.png"} />
 							<h1>{this.props.data.title}</h1>
 						</div>
 					</div>
