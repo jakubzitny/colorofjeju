@@ -377,18 +377,13 @@ body {
 	background-color: rgb(153, 102, 51);
 }
 
-.tooltip.top .tooltip-inner {
-	color: rgb(153, 102, 51);
+.tooltip-mine {
+	margin-top: 15px;
 	width: 150px;
 	height: 150px;
-	background-image: url('assets/tooltip.png');
 	background-repeat: no-repeat;
 	background-size: 150px 150px;
   background-color: transparent;
-}
-
-.tooltip.top .tooltip-arrow {
-	border-top-color: rgb(153, 102, 51);
 }
 
 .bubble {
